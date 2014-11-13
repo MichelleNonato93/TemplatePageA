@@ -1,0 +1,31 @@
+<section class="container">
+  <div class="layer1">
+    <div class="contain-to-grid sticky">
+      <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+        <div class="row">
+          <div class="large-4 columns">
+            <p class="logo-title">Yardstick</p>
+          </div>
+          <div class="large-8 columns">
+            <ul class="inline-list">
+              <li><%= link_to "Home" %></li>
+              <li><%= link_to "Procurement", '/procurement' %></li>
+              <li><%= link_to "Monitoring", '/monitoring' %></li>
+              <li><%= link_to "Stories", '/stories' %></li>
+              <li><%= link_to "Management" %></li>
+              <li><%= link_to "Vehicle" %></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="row content">
+      <div class="large-12 columns">
+        <p class="intro h4">Lorem ipsum dolor sit</p>
+        <p class="intro h6">Donec rutrum congue leo eget malesuada.</p>
+        <p class="intro h5">Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <%= render "contacts/form_a" %>
+      </div>
+    </div>
+  </div>
+</section>

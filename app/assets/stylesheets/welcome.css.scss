@@ -1,0 +1,213 @@
+.container{
+  background-image: url('41.jpg');
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.layer1{
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url('polka.png');
+  background-repeat: repeat, no-repeat;
+  background-position: center center;
+  background-size: auto, cover;
+  width:100%;
+  height:100%;
+}
+
+.registration{
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url('polka.png');
+  background-repeat: repeat, no-repeat;
+  background-position: center center;
+  background-size: auto, cover;
+  padding:8%;
+  border-radius:8px;
+
+  .input-box{
+  height:45px;
+
+  &:focus{
+    border:2px solid #FFCC00;
+    }
+  }
+
+  #button{
+  border-radius:5px;
+  height:48px;
+  }
+
+  .register-btn{
+  background-color:#ffc400;
+  color:#333;
+  font-weight:bold;
+  border-radius:5px;
+
+
+  &:hover{
+    color:white;
+    background-color:#D9A701;
+    border-radius:5px;
+  }
+
+  &:focus{
+    color:white;
+    background-color:#D9A701;
+    border-radius:8px;
+  }
+}
+
+}
+
+.buttons{
+    #button{
+  border-radius:5px;
+  height:48px;
+  }
+
+  .register-btn2{
+  background-color:#ffc400;
+  color:#333;
+  font-weight:bold;
+  border-radius:5px;
+
+
+  &:hover{
+    color:white;
+    background-color:#D9A701;
+    border-radius:5px;
+  }
+
+  &:focus{
+    color:white;
+    background-color:#D9A701;
+    border-radius:8px;
+  }
+}
+}
+.registration_a{
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url('polka.png');
+  background-repeat: repeat, no-repeat;
+  background-position: center center;
+  background-size: auto, cover;
+  border-radius:5px;
+  padding:2% 2% 0 2%;
+
+  .input-box-forma{
+    height:45px;
+    width:111%;
+
+    &:focus{
+      border:2px solid #FFCC00;
+    }
+  }
+
+  #button{
+    height:45px;
+    width:150%;
+  }
+
+  .register-btn1{
+    border-radius:0px;
+    background-color:#ffc400;
+    color:#333;
+    font-weight:bold;
+
+
+    &:hover{
+      color:white;
+      background-color:#D9A701;
+    }
+  }
+}
+
+.reg-title{
+  color:white;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight:bold;
+  text-transform:uppercase;
+  text-align:center;
+}
+
+.form-quote{
+  color:white;
+  text-align:center;
+  line-height: 20px;
+}
+
+.top-bar{
+  background:transparent;
+  height:75px;
+
+  .logo-title{
+    color:white;
+    padding-top:15px;
+    text-transform:uppercase;
+    font:{size:20px;
+          weight:bold;}
+  }
+
+  ul {padding-left:4%;}
+
+  a {color:white;
+    text-transform:uppercase;
+    font:{size:14px;
+          weight:bold;}
+    padding:20px 0 0 5px;
+
+    &:hover{color:yellow;}
+  }
+}
+
+.content{
+  position:relative;
+  top:80px;
+}
+
+.intro.h1{
+  font-size: 75px;
+  font-weight: 800;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color:white;
+}
+
+.intro.h4{
+  @extend .intro.h1;
+  font-size:60px;
+  text-align:center;
+  margin:3% 0 1% 0;
+}
+
+.intro.h2{
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color:white;
+}
+
+.intro.h6{
+  @extend .intro.h2;
+  font-size:25px;
+  text-align:center;
+}
+
+.intro.h3{
+  font-size: 18px;
+font-weight: 300;
+line-height: 28px;
+margin-bottom: 25px;
+color:white;
+}
+
+.intro.h5{
+  @extend .intro.h3;
+  text-align:center;
+}
