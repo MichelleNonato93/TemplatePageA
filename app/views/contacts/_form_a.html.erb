@@ -1,13 +1,13 @@
-<%= form_for Contact.new do |f| %>
-  <div class="small-10 small-push-1 columns registration_a">
-    <div class="row collapse">
-      <div class="small-8 columns">
-        <%= f.email_field :email, :required => "" , :placeholder => 'Email', :class => "input-box-forma" %>
-        <%= f.hidden_field :source, :value => request.fullpath %>
-      </div>
-      <div class="small-2 small-pull-1 columns">
-        <%= f.submit "Register Now", class: 'button register-btn1', :id => 'button' %>
-      </div>
+<%= form_for @contact do |f| %>
+  <%= f.text_field :name, :required => "", :placeholder => 'Full Name', :class => "input-box" %>
+  <%= f.email_field :email, :required => "" , :placeholder => 'Email', :class => "input-box" %>
+  <%= f.text_field :organization, :required => "" , :placeholder => 'Organization', :class => "input-box" %>
+  <%= f.text_field :role, :required => "" , :placeholder => 'Role', :class => "input-box" %>
+  <%= f.hidden_field :source, :value => request.fullpath %>
+  <p class="form-quote">We will never spam you, or sell your email to third parties. All fields are required</p>
+  <div class="row">
+    <div class="large-5 large-offset-1 columns">
+      <%= f.submit "Register Now", class: 'button register-btn2', :id => 'button' %>
     </div>
   </div>
 <% end %>

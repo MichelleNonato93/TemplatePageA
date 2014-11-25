@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get '/procurement' => 'welcome#procurement'
   get '/monitoring' => 'welcome#monitoring'
   get '/stories' => 'welcome#stories'
+  get '/management' => 'welcome#management'
+  get '/vehicle' => 'welcome#vehicle'
   get '/contacts' => "welcome#index"
 
   root 'welcome#index'

@@ -4,6 +4,45 @@
   height:85%;
 }
 
+.containerproc{
+  background-image: url('main.jpg');
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.containermonitor{
+  background-image: url('6.jpg');
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.containerstories{
+  background-image: url('banner-bg.jpg');
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.containermng{
+  background-image: url('intro-bg.jpg');
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.containervehicle{
+  background-image: url('5.jpg');
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
 .layer1{
   background-color: rgba(0, 0, 0, 0.3);
   background-image: url('polka.png');
@@ -56,11 +95,41 @@
 
 }
 
-.buttons{
-    #button{
+#button{
   border-radius:5px;
   height:48px;
+}
+
+
+.register-btn2{
+  background-color:#ffc400;
+  color:#333;
+  font-weight:bold;
+  border-radius:5px;
+
+
+    &:hover{
+      color:white;
+      background-color:#D9A701;
+      border-radius:5px;
+    }
+
+    &:focus{
+      color:white;
+      background-color:#D9A701;
+      border-radius:8px;
+    }
   }
+
+.registration-a{
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url('polka.png');
+  background-repeat: repeat, no-repeat;
+  background-position: center center;
+  background-size: auto, cover;
+  border-radius:5px;
+  padding:8%;
+  margin-top:13%;
 
   .register-btn2{
   background-color:#ffc400;
@@ -69,54 +138,23 @@
   border-radius:5px;
 
 
-  &:hover{
-    color:white;
-    background-color:#D9A701;
-    border-radius:5px;
-  }
-
-  &:focus{
-    color:white;
-    background-color:#D9A701;
-    border-radius:8px;
-  }
-}
-}
-.registration_a{
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: url('polka.png');
-  background-repeat: repeat, no-repeat;
-  background-position: center center;
-  background-size: auto, cover;
-  border-radius:5px;
-  padding:2% 2% 0 2%;
-
-  .input-box-forma{
-    height:45px;
-    width:111%;
-
-    &:focus{
-      border:2px solid #FFCC00;
-    }
-  }
-
-  #button{
-    height:45px;
-    width:150%;
-  }
-
-  .register-btn1{
-    border-radius:0px;
-    background-color:#ffc400;
-    color:#333;
-    font-weight:bold;
-
-
     &:hover{
       color:white;
       background-color:#D9A701;
+      border-radius:5px;
+    }
+
+    &:focus{
+      color:white;
+      background-color:#D9A701;
+      border-radius:8px;
     }
   }
+}
+
+#button{
+  height:45px;
+  width:150%;
 }
 
 .reg-title{
@@ -127,6 +165,16 @@
   text-transform:uppercase;
   text-align:center;
   margin-bottom:2%;
+}
+
+.reg-title-a{
+  color:white;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight:bold;
+  text-transform:uppercase;
+  text-align:center;
+  margin-bottom:5%;
 }
 
 .form-quote{
@@ -176,12 +224,14 @@
   margin:0;
 }
 
-.intro.h4{
-  @extend .intro.h1;
-  font-size:40px;
-  text-align:center;
-  margin:3% 0 1% 0;
-  text-align:center;
+.intro-h1{
+  font-size: 4.50em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:white;
+  margin-top:3%;
 }
 
 .intro.h2{
@@ -194,10 +244,13 @@
   text-align:center;
 }
 
-.intro.h6{
-  @extend .intro.h2;
-  font-size:25px;
-  text-align:center;
+.intro-h2{
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color:white;
 }
 
 .intro.h3{
@@ -209,9 +262,12 @@
   text-align:center;
 }
 
-.intro.h5{
-  @extend .intro.h3;
-  text-align:center;
+.intro-h3{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 25px;
+  color:white;
 }
 
 .register-btn2{

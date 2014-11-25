@@ -1,6 +1,6 @@
-<section class="container">
+<section class="containervehicle">
   <div class="layer1">
-    <div class="contain-to-grid sticky">
+    <div class="contain-to-grid">
       <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
         <div class="row">
           <div class="large-4 columns">
@@ -8,23 +8,28 @@
           </div>
           <div class="large-8 columns">
             <ul class="inline-list">
-              <li><%= link_to "Home" %></li>
+              <li><%= link_to "Home", "/" %></li>
               <li><%= link_to "Procurement", '/procurement' %></li>
               <li><%= link_to "Monitoring", '/monitoring' %></li>
               <li><%= link_to "Stories", '/stories' %></li>
-              <li><%= link_to "Management" %></li>
-              <li><%= link_to "Vehicle" %></li>
+              <li><%= link_to "Management", '/management' %></li>
+              <li><%= link_to "Vehicle", 'vehicle' %></li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
     <div class="row content">
-      <div class="large-12 columns">
-        <p class="intro h4">Lorem ipsum dolor sit</p>
-        <p class="intro h6">Donec rutrum congue leo eget malesuada.</p>
-        <p class="intro h5">Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <%= render "contacts/form_a" %>
+      <div class="large-7 columns">
+        <p class="intro-h1">Lorem ipsum dolor sit</p>
+        <p class="intro-h2">Donec rutrum congue leo eget malesuada.</p>
+        <p class="intro-h3">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat. Quisque velit nisi, pretium ut lacinia in, elementum id enim.Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+      </div>
+      <div class="large-5 columns">
+        <div class="registration-a">
+          <p class="reg-title-a">Register to Find Out More!</p>
+          <%= render "contacts/form_a" %>
+        </div>
       </div>
     </div>
   </div>
