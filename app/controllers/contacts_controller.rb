@@ -2,6 +2,7 @@ class ContactsController < ApplicationController
 
   def new
     @contact = Contact.new
+    render "welcome/index"
   end
 
   def create
@@ -11,12 +12,13 @@ class ContactsController < ApplicationController
     if @contact.save
       ContactMailer.thankyou_email(@contact).deliver
       puts "save ok"
-      flash[:notice] = "ok"
+      flash[:notice] = "Thank you for Registering!"
+      render "welcome/index"
     else
       puts @contact.errors.messages
-      flash[:alert] = "not ok"
+      flash[:alert] = "Oh, Oh! Unable to register your details."
+      render "welcome/index"
     end
-    render "welcome/index"
   end
 
   def destroy
@@ -24,8 +26,10 @@ class ContactsController < ApplicationController
 
     if @contact = Contact.destroy
       flash[:notice] = "ok"
+      render "welcome/index"
     else
       flash[:alert] = "not ok"
+      render "welcome/index"
     end
   end
 

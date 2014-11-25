@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
+
   get 'welcome/index'
   get '/procurement' => 'welcome#procurement'
   get '/monitoring' => 'welcome#monitoring'
   get '/stories' => 'welcome#stories'
+  get '/contacts' => "welcome#index"
 
   root 'welcome#index'
 
-  resources "contacts", only: [:new, :create]
+  resources "contacts", only: [:new,:create, :destroy]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

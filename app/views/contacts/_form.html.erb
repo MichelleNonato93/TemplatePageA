@@ -1,13 +1,40 @@
-<%= form_for @contact do |f| %>
-  <%= f.text_field :name, :required => "", :placeholder => 'Full Name', :class => "input-box" %>
-  <%= f.email_field :email, :required => "" , :placeholder => 'Email', :class => "input-box" %>
-  <%= f.text_field :organization, :required => "" , :placeholder => 'Organization', :class => "input-box" %>
-  <%= f.text_field :role, :required => "" , :placeholder => 'Role', :class => "input-box" %>
-  <%= f.hidden_field :source, :value => request.fullpath %>
-  <p class="form-quote">We will never spam you, or sell your email to third parties. All fields are required</p>
-  <div class="row">
-    <div class="large-6 large-offset-3 columns">
-      <%= f.submit "Register Now", class: 'button register-btn', :id => 'button' %>
-    </div>
+<% if @contact.errors.any? %>
+  <div id="error_explanation">
+    <ul class="list-errors">
+    <% @contact.errors.full_messages.each do |msg| %>
+      <li><%= msg %>!</li>
+    <% end %>
+    </ul>
   </div>
 <% end %>
+<div class="row form">
+  <div class="large-12 columns">
+    <%= form_for @contact do |f| %>
+      <div class="row">
+        <div class="large-6 columns box-cont">
+          <%= f.text_field :name, :required => "", :placeholder => 'Full Name', :class => "box" %>
+        </div>
+        <div class="large-6 columns box-cont">
+          <%= f.email_field :email, :required => "" , :placeholder => 'Email', :class => "box" %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns box-cont">
+          <%= f.text_field :organization, :required => "" , :placeholder => 'Organization', :class => "box" %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns box-cont">
+          <%= f.text_field :role, :required => "" , :placeholder => 'Role', :class => "box" %>
+        </div>
+      </div>
+      <%= f.hidden_field :source, :value => request.fullpath %>
+      <p class="form-quote">We will never spam you, or sell your email to third parties. All fields are required</p>
+      <div class="row">
+        <div class="large-6 large-offset-5 columns">
+          <%= f.submit "Register Now", class: 'button register-btn', :id => 'button' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

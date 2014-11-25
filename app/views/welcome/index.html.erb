@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container" id="up">
   <div class="layer1">
     <div class="contain-to-grid sticky">
       <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
@@ -19,32 +19,182 @@
         </div>
       </nav>
     </div>
+
     <div class="row content">
-      <div class="large-7 columns">
-        <p class="intro h1">Lorem ipsum dolor sit</p>
-        <p class="intro h2">Donec rutrum congue leo eget malesuada.</p>
-        <p class="intro h3">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat. Quisque velit nisi, pretium ut lacinia in, elementum id enim.Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-        <div class="buttons">
-          <a href="#" class="button register-btn2">Discover More</a>
+      <div class="sectone">
+        <div class="large-10 large-offset-1 columns">
+          <p class="intro h1">Lorem ipsum dolor sit</p>
+          <p class="intro h2">Donec rutrum congue leo eget malesuada.</p>
+          <p class="intro h3">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat. Quisque velit nisi, pretium ut lacinia in, elementum id enim.Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+          <div class="row">
+            <div class="large-8 large-offset-4 columns">
+              <div class="buttons">
+                <a href="#contact-sect" class="button register-btn2">Register Now</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="large-5 columns">
-        <div class="registration">
-          <% if @contact.errors.any? %>
-            <div id="error_explanation">
-              <h2><%= pluralize(@contact.errors.count, "error") %> </h2>
+    </div>
+  </div>
+</section>
 
-              <ul>
-              <% @contact.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-              <% end %>
-              </ul>
+<section class="small-container">
+  <div class="row">
+    <div class="secttwo">
+      <div class="large-11 large-offset-1 columns">
+        <p><%= link_to 'Discover More' %></p>
+      </div>
+      <div class="large-11 large-offset-1 columns">
+        <%= image_tag 'arrowdown.png', :class => 'arrow' %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mod-container">
+  <div class="row">
+    <div class="secttwo">
+      <div class="large-8 large-offset-2 columns">
+        <p class="sect-title">Yardstick is Finally here!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="small-container0">
+  <div class="row">
+    <div class="secttwo">
+      <div class="large-12 columns">
+        <p>Module Features of yardstick</p>
+        <p class="subp">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+      </div>
+      <div class="large-12 columns">
+        <ul>
+          <li><%= link_to "Procurement", '/#proc' %></li>
+          <li><%= link_to "Monitoring", '/monitoring' %></li>
+          <li><%= link_to "Stories", '/stories' %></li>
+          <li><%= link_to "Management" %></li>
+          <li><%= link_to "Vehicle" %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mod-container" id="proc">
+  <div class="row">
+    <div class="secttwo">
+      <div class="large-8 large-offset-2 columns">
+        <p class="sect-title"><%= link_to "Vestibulum ac diam sit", '/procurement' %></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="small-container1">
+  <div class="row">
+    <div class="secttwo">
+      <div class="large-8 large-offset-2 columns">
+        <h2>Vestibulum ac diam sit</h2>
+        <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut libero malesuada feugiat.</p>
+        <div class="row">
+          <div class="large-5 large-offset-4 columns">
+            <div class="buttons">
+              <a href="#" class="button register-btn2">View More</a>
             </div>
-          <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mod-container1">
+  <div class="layer2">
+    <div class="row">
+      <div class="secttwo">
+        <div class="large-8 large-offset-2 columns">
+          <p class="sect-title"><%= link_to "Pellentesque in ipsum.", '/procurement' %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="small-container1">
+  <div class="row">
+    <div class="secttwo">
+      <div class="large-8 large-offset-2 columns">
+        <h2>Pellentesque in ipsum</h2>
+        <p>Pellentesque in ipsum, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut libero malesuada feugiat.</p>
+        <div class="row">
+          <div class="large-5 large-offset-4 columns">
+            <div class="buttons">
+              <a href="#" class="button register-btn2">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mod-container2">
+  <div class="row">
+    <div class="secttwo">
+      <div class="large-8 large-offset-2 columns">
+        <p class="sect-title"><%= link_to "Lorem ipsum dolor", '/procurement' %></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="small-container1">
+  <div class="row">
+    <div class="secttwo">
+      <div class="large-8 large-offset-2 columns">
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut libero malesuada feugiat.</p>
+        <div class="row">
+          <div class="large-5 large-offset-4 columns">
+            <div class="buttons">
+              <a href="#" class="button register-btn2">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-container" id="contact-sect">
+  <div class="layered-container">
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="registration">
           <p class="reg-title">Register to Find Out More!</p>
+          <div class="messages">
+            <% flash.each do |name, msg| %>
+              <div class="alert-box <%= name.to_s == 'notice' ? 'primary' : 'alert' %>">
+                <%= content_tag :div, msg %>
+                <a href="#" data-dismiss="alert" class="close">×</a>
+              </div>
+            <% end %>
+
+          </div>
           <%= render "contacts/form" %>
         </div>
       </div>
+    </div>
+    <%= link_to image_tag "arrowup.png" , :class => 'arrowup' %>
+  </div>
+</section>
+
+<section class="footer">
+  <div class="row">
+    <div class="large-12 columns">
+      <p>Copyright 2014 <b>Yardstick</b>. All Rights Reserved.</p>
     </div>
   </div>
 </section>
